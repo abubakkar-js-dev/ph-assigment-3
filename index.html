@@ -13,49 +13,200 @@
     />
 
     <!-- fontawesome cdn -->
-    <script src="https://kit.fontawesome.com/217bc341aa.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/217bc341aa.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- daisyui cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- external css file -->
-     <link rel="stylesheet" href="./styles/.css">
+    <link rel="stylesheet" href="./styles/.css" />
 
-     <!-- tailwind customization -->
-     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'primary': '#ABEF5F',
-              },
-              fontFamily: {
-                manrope:  '"Manrope", sans-serif',
-              }
-            }
-          }
-        }
-      </script>
-
+    <!-- tailwind customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#ABEF5F",
+            },
+            fontFamily: {
+              manrope: '"Manrope", sans-serif',
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="font-manrope">
     <!-- header section starts here -->
-     <header>
-        <!-- nav section -->
-        <h1 class="text-3xl m-8 text-white bg-primary text-center">Hello world</h1>
-        <!-- nav section end -->
-     </header>
+    <header>
+      <!-- nav section -->
+      <nav class="container mx-auto pt-8 pb-10">
+        <div class="navbar bg-base-100 gap-3">
+          <div class="navbar-start">
+            <div class="flex items-center gap-2">
+              <i
+                class="fa-solid fa-arrow-right -rotate-45 p-3 bg-primary rounded-full"
+              ></i>
+              <a class="text-3xl font-extrabold">Rinterio</a>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="flex gap-8 menu-horizontal px-1">
+              <li class="focus:bg-transparent active:bg-transparent !important">
+                <a
+                  class="hover:bg-transparent text-gray-700 hover:text-black text-base active:bg-transparent duration-75"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="focus:bg-transparent active:bg-transparent !important">
+                <a
+                  class="hover:bg-transparent text-gray-700 hover:text-black text-base active:bg-transparent duration-75"
+                  href="#"
+                  >Services</a
+                >
+              </li>
+              <li class="focus:bg-transparent active:bg-transparent !important">
+                <a
+                  class="hover:bg-transparent text-gray-700 hover:text-black text-base active:bg-transparent duration-75"
+                  href="#"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="focus:bg-transparent active:bg-transparent !important">
+                <a
+                  class="hover:bg-transparent text-gray-700 hover:text-black text-base active:bg-transparent duration-75"
+                  href="#"
+                  >Blogs</a
+                >
+              </li>
+              <li class="focus:bg-transparent active:bg-transparent !important">
+                <a
+                  class="hover:bg-transparent text-gray-700 hover:text-black text-base active:bg-transparent duration-75"
+                  href="#"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <!-- nav button section -->
+            <div class="hidden sm:flex gap-4 items-center">
+              <di
+                class="w-[48px] h-[48px] flex justify-center items-center border-2 border-gray-200 rounded-[56px]"
+              >
+                <i class="fa-solid fa-magnifying-glass text-xl"></i>
+              </di>
+              <div
+                class="w-[48px] h-[48px] flex justify-center items-center border-2 border-gray-200 rounded-[56px]"
+              >
+                <i class="fa-solid fa-cart-shopping text-xl"></i>
+              </div>
+              <div>
+                <button
+                  class="flex items-center w-[220px] md:w-[280px] xl:w-full justify-center text-lg md:text-xl font-extrabold px-5 py-2 md:py-3 bg-primary rounded-[32px]"
+                >
+                  Book Consult
+                  <i
+                    class="fa-solid fa-arrow-right -rotate-45 p-2 md:p-3 bg-black text-white ml-2 rounded-full"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <!-- mobile menu -->
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars text-2xl"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu dropdown-content bg-base-100 rounded-box z-[1] mt-3 px-2 shadow w-60 -left-28 top-10 sm:top-16"
+              >
+                <li
+                  class="w-full text-center block hover:bg-slate-300 rounded-lg"
+                >
+                  <a
+                    class="hover:bg-transparent text-gray-700 hover:text-black text-base active:bg-transparent duration-75"
+                    href="#"
+                    >Home</a
+                  >
+                </li>
+                <li
+                  class="w-full text-center block hover:bg-slate-300 rounded-lg"
+                >
+                  <a
+                    class="hover:bg-transparent text-gray-700 hover:text-black text-base active:bg-transparent duration-75"
+                    href="#"
+                    >Services</a
+                  >
+                </li>
+                <li
+                  class="w-full text-center block hover:bg-slate-300 rounded-lg"
+                >
+                  <a
+                    class="hover:bg-transparent text-gray-700 hover:text-black text-base active:bg-transparent duration-75"
+                    href="#"
+                    >Portfolio</a
+                  >
+                </li>
+                <li
+                  class="w-full text-center block hover:bg-slate-300 rounded-lg"
+                >
+                  <a
+                    class="hover:bg-transparent text-gray-700 hover:text-black text-base active:bg-transparent duration-75"
+                    href="#"
+                    >Blogs</a
+                  >
+                </li>
+                <li
+                  class="w-full text-center block hover:bg-slate-300 rounded-lg"
+                >
+                  <a
+                    class="hover:bg-transparent text-gray-700 hover:text-black text-base active:bg-transparent duration-75"
+                    href="#"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- nav section end -->
+      <!-- hero section  -->
+      <div class="hero">
+        <div class="hero-content text-center">
+          <div class="max-w-screen-lg space-y-5">
+            <img class="mx-auto" src="./assets/banner.png" alt="">
+            <h1 class="text-3xl md:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
+            <p class="py-1 mb-2 text-base">
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+            </p>
+            <button class=" bg-primary/50 text-xl font-bold rounded-[32px] px-6 py-3 text-black shadow-lg">View Details
+              <i
+              class="fa-solid fa-arrow-right -rotate-45 p-2 md:p-3 bg-primary text-black ml-2 rounded-full"
+            ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- hero section end -->
+    </header>
     <!-- header section ends here -->
     <!-- main section starts here -->
-     <main>
-        
-     </main>
+    <main></main>
     <!-- main section end here -->
-     <!-- footer section starts here -->
-      <footer>
-
-      </footer>
-     <!-- footer section ends here -->
+    <!-- footer section starts here -->
+    <footer></footer>
+    <!-- footer section ends here -->
   </body>
 </html>
